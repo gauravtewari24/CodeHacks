@@ -11,8 +11,11 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+app.get('/', function (req, res) {
+    res.render('login');
+})
 
-app.get("/", function (req, res) {
+app.get("/homepage", function (req, res) {
     request('https://codeforces.com/api/problemset.problems?tags=dp', function (error, response, body) {
         if (error) {
             console.log("SOmething Wnt Wrong!!");
