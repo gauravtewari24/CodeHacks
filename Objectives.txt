@@ -1,0 +1,5 @@
+1. login auth
+2. custom tag extraction and all
+3. handle details extraction
+4. contest pier rating 
+5. and rest upto KV.
